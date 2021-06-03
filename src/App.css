@@ -1,38 +1,156 @@
-.App {
-  text-align: center;
+.logo {
+  background-color: #6e31bd;
+  border-radius: 50%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-brand {
+  color: gainsboro !important;
+  letter-spacing: 2px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.navbar-brand:hover {
+  color: ghostwhite;
+}
+
+h1 {
+  letter-spacing: 1px;
+  line-height: 70px;
+}
+
+h1,
+h2,
+h3,
+h6 {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+p {
+  color: #c3c6cf;
+  font-size: 110%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.nav-link {
+  color: #c3c6cf;
+  margin-right: 25px;
+}
+
+.video {
+  background-color: black;
+  color: #6e31bd;
+  margin-left: 20px;
+  border: 0;
+}
+
+.video:hover {
+  background-color: rgba(0, 0, 0, 0.363);
+}
+
+.video:focus {
+  background-color: rgba(0, 0, 0, 0.363);
+}
+
+.video-text {
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+.btn-1 {
+  width: 170px;
+  height: 50px;
+  color: white;
+  background-color: #6e31bd;
+  border: 0;
+  border-radius: 0%;
+}
+
+.card {
+  height: 150px;
+  font-size: 10px;
+  background-color: black;
+  border: 0;
+}
+
+.card-img-top {
+  width: 15%;
+}
+
+.card-body {
+  padding-left: 0px;
+}
+
+.card-title {
+  color: #c3c6cf;
+  font-size: 14px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.card-text {
+  width: 150px;
+  font-size: 13px;
+  color: #83868f;
+}
+
+.monitor {
+  padding: 0px 55px;
+  margin-top: 90px;
+}
+
+.monitor h1 {
+  font-size: 300%;
+}
+
+.chart {
+  position: relative;
+  bottom: 450px;
+  right: 40px;
+}
+
+@media (max-width: 768px) {
+  .monitor h1 {
+    font-size: 200%;
+    line-height: 1.3;
   }
-  to {
-    transform: rotate(360deg);
+
+  .video {
+    margin-left: 15px;
+    margin-top: 10px;
+    padding-left: 2px;
+  }
+
+  .main-chart {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  * {
+    text-align: center;
+  }
+
+  .card {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .card-img-top {
+    margin: 0 auto;
+    width: 18%;
+    height: 45px;
+  }
+  .card-title,
+  .card-text {
+    margin-left: 10px;
+    font-size: 17px;
+    width: 200px;
+  }
+  .card-1 {
+    margin-top: 50px;
   }
 }
